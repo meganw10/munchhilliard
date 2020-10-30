@@ -13,6 +13,8 @@ public class User
     
     // add more
     private String name;
+    
+    private String password;
 
     /**
       describe this constructor
@@ -53,7 +55,15 @@ public class User
     {
       name = _name;
     }
-    
+     /**
+      Sets the users password
+      @param _password which is the user's desired password
+    */
+    public void setPassword(String _password)
+    {
+      password = _password;
+    }
+  
     /**
       getName()
       Accesses the name of the user.
@@ -65,5 +75,13 @@ public class User
     }
   
     
+      /**
+      returns the users password
+      @return password whoch is the user's desired password
+    */
+    public String getPassword(String _password)
+    {
+      return password;
+    }
 
 }
